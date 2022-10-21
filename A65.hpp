@@ -4,22 +4,20 @@
 #include <iostream>
 using namespace std;
 
-void	swap(int &, int &, int &);
-void	swaptwo(int &, int &);
+void swap(int n1, int n2, int n3);
+void swaptwo(int n, int s);
 
-void	swap(int &num1, int &num2, int &num3)
-{
-	swaptwo(num1, num2);
-	swaptwo(num1, num3);
+void swap(int n, int s){
+    int temp;
+    temp = n;
+    n = s;
+    s = temp;
 }
-void	swaptwo(int &i, int &j)
-{
-	int 	tmp;
-	tmp = i;
-	i = j;
-	j = tmp;
-}
+void swap(int n1, int n2, int n3){
 
+    swap(n2, n3);
+    swap(n1, n2);
+}
 // complete two functions
 // swap() ; to swap all three values like (a, b, c) to (c, a, b)
 //              This function will use swaptwo().
