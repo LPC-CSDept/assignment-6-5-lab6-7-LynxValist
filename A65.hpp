@@ -13,12 +13,9 @@ void swaptwo(int n, int s){
     n = s;
     s = temp;
 }
-void swap(int no1, int no2, int no3){
-    no1 = no1;
-    no2 = no2;
-    no3 = no3;
-    swaptwo(no2, no3);
-    swaptwo(no1, no2);
+void swap(int n1, int n2, int n3){
+    swaptwo(n2, n3);
+    swaptwo(n1, n2);
 }
 // complete two functions
 // swap() ; to swap all three values like (a, b, c) to (c, a, b)
