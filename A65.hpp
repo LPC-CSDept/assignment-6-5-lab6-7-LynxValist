@@ -15,8 +15,8 @@ void swap(int n, int s){
 }
 void swap(int n1, int n2, int n3){
 
-    swap(n2, n3);
     swap(n1, n2);
+    swap(n1, n3);
 }
 // complete two functions
 // swap() ; to swap all three values like (a, b, c) to (c, a, b)
