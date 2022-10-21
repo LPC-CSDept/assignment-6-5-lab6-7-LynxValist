@@ -4,16 +4,16 @@
 #include <iostream>
 using namespace std;
 
-void swap(int n1, int n2, int n3);
-void swap(int n, int s);
+void swap(int &n1, int &n2, int &n3);
+void swaptwo(int &n, int &s);
 
-void swap(int n, int s){
+void swaptwo(int &n, int &s){
     int temp;
     temp = n;
     n = s;
     s = temp;
 }
-void swap(int n1, int n2, int n3){
+void swap(int &n1, int &n2, int &n3){
 
     swap(n1, n2);
     swap(n1, n3);
