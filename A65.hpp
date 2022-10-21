@@ -5,7 +5,7 @@
 using namespace std;
 
 void swap(int n1, int n2, int n3);
-void swaptwo(int n, int s);
+void swap(int n, int s);
 
 void swap(int n, int s){
     int temp;
